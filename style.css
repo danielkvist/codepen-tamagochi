@@ -1,0 +1,32 @@
+:root {
+	/* COLORS */
+	--pink: #d96fa0;
+	--light-pink: #f2c0dc;
+	--purple: #bc386c;
+	--black: #111316;
+	--gray: #837f82;
+	--dark-blue: #312e61;
+
+	/* Proportions */
+	--h: 3.25rem;
+	--w: 2.75rem;
+
+	/* DEFAULT VALUES */
+	font-size: 16px;
+}
+
+body {
+	background-color: var(--light-pink);
+	display: grid;
+	height: 100vh;
+	place-items: center;
+}
+
+.tamagochi {
+	background-color: var(--purple);
+	background: radial-gradient(ellipse at top left, var(--pink), var(--purple));
+	clip-path: ellipse(45% 45% at 50% 50%);
+	height: calc(var(--h) * 6);
+	width: calc(var(--w) * 6);
+	position: relative;
+}
