@@ -8,7 +8,16 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div class="tamagochi"></div>
+		<div class="tamagochi">
+			<div class="tamagochi__screen-framework">
+				<canvas id="canvas" class="tamagochi__screen"></canvas>
+			</div>
+			<div class="tamagochi__buttons">
+				<button class="button button--first-action" id="firstButton"></button>
+				<button class="button button--middle" id="middleButton"></button>
+				<button class="button button--second-action" id="secondButton"></button>
+			</div>
+		</div>
 		<script src="app.js"></script>
 	</body>
 </html>

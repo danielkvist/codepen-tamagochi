@@ -1,5 +1,6 @@
 :root {
 	/* COLORS */
+	--white: #fff;
 	--pink: #d96fa0;
 	--light-pink: #f2c0dc;
 	--purple: #bc386c;
@@ -23,10 +24,59 @@ body {
 }
 
 .tamagochi {
+	display: grid;
+	place-items: center;
 	background-color: var(--purple);
 	background: radial-gradient(ellipse at top left, var(--pink), var(--purple));
 	clip-path: ellipse(45% 45% at 50% 50%);
-	height: calc(var(--h) * 6);
 	width: calc(var(--w) * 6);
+	height: calc(var(--h) * 6);
+}
+
+.tamagochi__screen-framework {
+	background-color: var(--purple);
+	background: radial-gradient(circle at center, var(--purple), var(--black));
+	border-radius: 15px;
+	display: grid;
+	height: calc(var(--w) * 3);
+	margin-bottom: 1.75rem;
+	place-items: center;
+	position: absolute;
+	width: calc(var(--w) * 3);
+}
+
+.tamagochi__screen {
+	background-color: var(--white);
+	background: radial-gradient(
+		circle at top left,
+		var(--white),
+		var(--light-pink)
+	);
+	border-radius: 5px;
+	height: calc(var(--w) * 2.45);
 	position: relative;
+	width: calc(var(--w) * 2.45);
+}
+
+.tamagochi__buttons {
+	display: flex;
+	gap: 1.15rem;
+	height: 100%;
+}
+
+.button {
+	border-radius: 50%;
+	border: none;
+	background: radial-gradient(
+		circle at top left,
+		var(--white),
+		var(--light-pink)
+	);
+	height: calc(var(--w) * 0.75);
+	margin-top: 14.45rem;
+	width: calc(var(--w) * 0.75);
+}
+
+.button--middle {
+	margin-top: 13.95rem;
 }
